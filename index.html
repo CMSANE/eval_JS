@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>évaluation jeu de dé</title>
+    </head>
+ <!-- Début Body -->
+ <body>
+    <!-- Début contenair -->
+    <div class="container ">
+        <div class="row well">
+             <!--Les trois Bouttons du jeu -->
+             <button class="btn-new-game"><i class="ion-ios-plus-outline"></i>New game</button>
+             <button class="btn-lancer-dE"><i class="ion-ios-loop"></i>Lancer dé</button>
+             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+             
+            <!-- Début Panneau du 1er joueur -->
+            <div class="joueur-0-panneau ">
+                <div class="joueur-nom" id="nom-0">Joueur 1</div>
+                <div class="joueur-GLOBAL" id="GLOBAL-0">43</div>
+                  <div class="joueur-ROUND-box">
+                    <div class="joueur-ROUND-label">ROUND</div>
+                    <div class="joueur-ROUND-score" id="ROUND-0">11</div>
+                  </div>
+            </div><!-- Fin Panneau du 2ème joueur -->
+
+            <!-- Début Panneau du 2ème joueur -->
+            <div class="joueur-1-panneau">
+                <div class="joueur-nom" id="nom-1">Joueur 2</div>
+                <div class="joueur-GLOBAL" id="GLOBAL-1">72</div>
+                  <div class="joueur-ROUND-box">
+                    <div class="joueur-ROUND-label">ROUND</div>
+                    <div class="joueur-ROUND-score" id="ROUND-1">0</div>
+                  </div>
+            </div><!-- Fin Panneau du 2ème joueur -->
+
+            <!-- Image de l'affichage du Dé -->
+            <img src="../images/dE-5.png" alt="dé" class="dE">
+        </div><!-- Fin div row -->
+    </div><!-- Fin contenair -->
+    
+        <script src="app.js"></script>
+ </body><!-- fin Body -->
+</html><!-- fin html -->

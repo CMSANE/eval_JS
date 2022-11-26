@@ -1,0 +1,147 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcfdfcbe;
+    background-image: url("../images/back-ground.png")
+}
+
+.row {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+.well{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+/* Position + taille Police + couleur des trois boutons */
+.btn-new-game, .btn-lancer-dE, .btn-hold{ 
+    position: absolute;
+    top: 550px;
+    font-size: 25px;
+    color: #0606e7;
+}
+/**********************************************
+*** Fin GENERAL
+**********************************************/
+
+/**********************************************
+*** joueurs
+**********************************************/
+/* Panneau Joueur */
+.joueur-0-panneau,
+.joueur-1-panneau {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+    background-color: rgb(253, 245, 234);
+}
+/* Style nom Joueur 1 et 2 */
+.joueur-nom {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px;
+}
+/* GLOBAL Score */
+.joueur-GLOBAL {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #4d67eb;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/*  Identifie le Panneau tour de chaque joueur */
+.active { 
+    background-color: #f8e0afd0; 
+}
+
+/* Style du box ROUND */
+.joueur-ROUND-box {
+    background-color: #2e12aa;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
+}
+
+/* Styles des trois bouttons */
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; 
+}
+button:hover i {
+     margin-right: 20px;
+     }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+/* Positionnement des trois boutons */
+.btn-new-game{ 
+    left: 25%;
+}
+.btn-lancer-dE { 
+    left: 55%;
+}
+.btn-hold { 
+    left: 80%;
+}
+/* style du Dé */
+.dE {
+    position: absolute;
+    left: 50%;
+    top: 270px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+/* Style du Gagnant */
+.Gagnant { background-color: #4bef71f2; ; }
+.Gagnant .joueur-nom { font-weight: 300; color: #EB4D4D; }
+
+
